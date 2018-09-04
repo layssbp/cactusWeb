@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+   CACTUS - ADMINISTRADOR
+ </title>
+
+ <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+ <link rel="stylesheet" type="text/css" href="bootstrap/css/pagadmin.css">
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+ <script type="text/javascript" src="assets/js/pagadmin.js"></script>
+
+ <link rel="icon" href="imgs/p1.png" type="image/x-icon" />
+ <link rel="shortcut icon" href="imgs/p1.png" type="image/x-icon" />
+ <link href="https://fonts.googleapis.com/css?family=Poppins:100" rel="stylesheet"> 
+</head>
+<body>
+
+  <div class="header">
+    <nav class="navbar navbar-default navbar-custom">
+      <div class= "container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand" href="#">CACTUS</a>
+        </div>
+
+        
+        <div id="barra-navegacao">
+
+
+        </div>
+      </nav>
+
+    </div>
+
+
+    <div class="row">
+      <div class="col" >
+        <div class="left-sidebar">
+          <!-- Sidebar scroll-->
+          <div class="scroll-sidebar">
+            <!-- Sidebar navigation-->
+            <nav class="sidebar-nav">
+              <ul id="sidebarnav">
+
+                <li class="nav-label">Home</li>
+                <li class="nav-devider"></li>
+                <li> <a href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Dashboard </span></a>
+
+                  <li class="nav-label">Usuários</li>
+                  <li class="nav-devider"></li>
+                  <li> <a href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Controle </span></a>
+                  </li>
+                  <li> <a href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Adição </span></a>
+
+                    <li class="nav-devider"></li>
+                    <li class="nav-label">Plantas</li>
+                    <li> <a href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Controle </span></a>
+                    </li>
+                    <li> <a href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Adição </span></a>
+                    </li>
+
+                    <li class="nav-label">Site</li>
+                    <li class="nav-devider"></li>
+                    <li> <a href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Relatórios </span></a>
+                    </li>
+                    <li> <a href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Backup </span></a>
+                    </li>
+
+                  </nav>
+                  <!-- End Sidebar navigation -->
+                </div>
+                <!-- End Sidebar scroll-->
+              </div>
+            </div>
+
+
+
+
+          </div>
+
+          <div class="row">
+            <div style="margin-left:500px">
+              <div class="row">
+                <div class="col-3 col-sm-2 alinhado">
+                  <div class="card">
+                    <h2>1000</h2>
+                    <p class="m-b-0">Usuários Cadastrados</p>
+
+                  </div>
+                </div>
+
+                <div class="col-3 col-sm-2 alinhado">
+                  <div class="card">
+                    <h2>1000</h2>
+                    <p class="m-b-0">Jardins Construidos</p>
+
+                  </div>
+                </div>
+
+                <div class="col-3 col-sm-2 alinhado ">
+                  <div class="card">
+                    <h2>800</h2>
+                    <p class="m-b-0">Plantas Catalogadas</p>
+
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="conteudo">
+            <div class="card card2">
+              <div id="chart_div"  style="width: 100%; height: 500px;"></div>
+
+              <div class="container">
+                <div class="row">
+                  <div class="col-5 col-sm-5">
+                    <div class="card">
+                      <h1 id="al"> Recados </h1>
+                      <div id="table_div"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-4 col-sm-4">
+                    <div class="card form-check">
+                      <h1 id="al"> Lista de Afazeres </h1>
+                      <ul>
+                        <li>
+                      <label>
+                        <input type="checkbox" class="form-check-input" id="defaultCheck1">
+
+                  <label class="form-check-label" for="defaultCheck1">Cadastrar Planta nova</label>
+                        
+                      </label>
+                      </li>
+                      <li>
+                      <label>
+                        <input type="checkbox">
+
+                        <label class="form-check-label" for="defaultCheck2">Remover usuário ruim</label>
+                        
+                      </label>
+                        </li>
+                        <li>
+                      <label>
+                        <input type="checkbox" id="defaultCheck3">
+                        <label class="form-check-label" for="defaultCheck3">Adicionar novo administrador</label>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" id="defaultCheck4">
+                        <label class="form-check-label" for="defaultCheck4">Comprar pão</label>
+                      </label>
+                    </li>
+                    </ul>
+                    <div class="alinhado">
+                    <label>
+                      <input type="text"  class="form-control"placeholder="Insira um item aqui">
+                    </label>
+                  </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>      
+            </div>  
+
+          </div>
+
+
+
+
+
+          <!-- footer -->
+          <footer class="footer">
+            <div class="container">
+              <center><span class="text-muted">
+              © 2018 lays e francis.</span>
+            </div></center>
+          </footer>
+
+
+
+
+          <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+          <!-- Include all compiled plugins (below), or include individual files as needed -->
+          <script src="bootstrap/js/bootstrap.min.js"></script>
+
+        </body>
+        </html>

@@ -1,0 +1,158 @@
+body{
+  background-color:#ffffff;
+}
+
+
+.left-sidebar {
+  margin-top:52px;
+  position: absolute;
+  width: 240px;
+  height: 100%;
+  top: 0;
+  z-index: 20;
+  padding-top: 20px;
+  background: #fff;
+  -webkit-box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
+}
+
+
+.scroll-sidebar {
+  padding-bottom: 60px;
+}
+
+.sidebar-nav ul li {
+  list-style: none;
+}
+.sidebar-nav ul li a {
+  color: #607d8b;
+  padding: 7px 35px 7px 15px;
+  display: block;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.sidebar-nav ul li a:hover {
+  color: #1976d2;
+}
+.sidebar-nav ul li a:hover i {
+  color: #1976d2;
+}
+.sidebar-nav ul li a.active {
+  color: #1976d2;
+  font-weight: 500;
+}
+.sidebar-nav ul li a.active i {
+  color: #1976d2;
+}
+.sidebar-nav ul li ul {
+  padding-left: 28px;
+}
+.sidebar-nav ul li ul li a {
+  padding: 7px 35px 7px 15px;
+}
+.sidebar-nav ul li ul ul {
+  padding-left: 15px;
+}
+.sidebar-nav ul li.nav-label {
+  font-size: 12px;
+  margin-bottom: 0;
+  padding: 14px 14px 14px 20px;
+  color: #607d8b;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.sidebar-nav ul li.nav-devider {
+  height: 1px;
+  background: rgba(120, 130, 140, 0.13);
+  display: block;
+}
+
+.sidebar-nav ul li.nav-label {
+  font-size: 12px;
+  margin-bottom: 0;
+  padding: 14px 14px 14px 20px;
+  color: #607d8b;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.sidebar-nav > ul > li > a i {
+  width: 27px;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #99abb4;
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding:10px;
+    margin-top:20px;
+    margin-right:20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.alinhado{
+  padding:1px;
+  text-align: center
+}
+
+.card2{
+  margin-left:250px;
+}
+
+#al{
+  text-align: center;
+  margin-bottom:10px;
+}
+
+ul{
+  list-style: none;
+}
+
+.bg-primary {
+  background: #4680ff !important;
+  color: #ffffff;
+  fill: #4680ff;
+}
+.bg-success {
+  background: #26dad2 !important;
+  color: #ffffff;
+  fill: #26dad2;
+}
+.bg-info {
+  background: #62d1f3 !important;
+  color: #ffffff;
+  fill: #62d1f3;
+}
+.bg-danger {
+  background: #fc6180 !important;
+  color: #ffffff;
+  fill: #fc6180;
+}
+.bg-warning {
+  background: #ffb64d !important;
+  color: #ffffff;
+  fill: #ffb64d;
+}
+.bg-pink {
+  background: #e6a1f2 !important;
+  color: #ffffff;
+  fill: #e6a1f2;
+}
+.bg-dark {
+  background: #444c67 !important;
+  color: #ffffff;
+  fill: #444c67;
+}
+.bg-transparent {
+  background: transparent;
+  color: #252525;
+}
+
