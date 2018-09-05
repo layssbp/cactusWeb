@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+   CACTUS - ADMINISTRADOR
+ </title>
+
+ <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+ <link rel="stylesheet" type="text/css" href="bootstrap/css/pagadmin.css">
+ <link rel="stylesheet" type="text/css" href="bootstrap/css/controleusuario.css">
+
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+ <script type="text/javascript" src="assets/js/pagadmin.js"></script>
+
+ <link rel="icon" href="imgs/p1.png" type="image/x-icon" />
+ <link rel="shortcut icon" href="imgs/p1.png" type="image/x-icon" />
+ <link href="https://fonts.googleapis.com/css?family=Poppins:100" rel="stylesheet"> 
+</head>
+<body>
+
+  <div class="header">
+    <nav class="navbar navbar-default navbar-custom">
+      <div class= "container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand" href="#">CACTUS</a>
+        </div>
+
+        
+        <div id="barra-navegacao">
+
+
+        </div>
+      </nav>
+
+    </div>
+
+
+    <div class="row">
+      <div class="col" >
+        <div class="left-sidebar">
+          <!-- Sidebar scroll-->
+          <div class="scroll-sidebar">
+            <!-- Sidebar navigation-->
+            <nav class="sidebar-nav">
+              <ul id="sidebarnav">
+
+                <li class="nav-label">Home</li>
+                <li class="nav-devider"></li>
+                <li> <a href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Dashboard </span></a>
+
+                  <li class="nav-label">Usuários</li>
+                  <li class="nav-devider"></li>
+                  <li> <a href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Controle </span></a>
+                  </li>
+                  <li> <a href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Adição Admin </span></a>
+
+                    <li class="nav-devider"></li>
+                    <li class="nav-label">Plantas</li>
+                    <li> <a href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Controle </span></a>
+                    </li>
+                    <li> <a href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Adição </span></a>
+                    </li>
+
+                    <li class="nav-label">Site</li>
+                    <li class="nav-devider"></li>
+                    <li> <a href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Relatórios </span></a>
+                    </li>
+                    <li> <a href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Backup </span></a>
+                    </li>
+
+                  </nav>
+                  <!-- End Sidebar navigation -->
+                </div>
+                <!-- End Sidebar scroll-->
+              </div>
+            </div>
+          </div>
+
+
+          <div class="conteudo">
+            <div class="card card2 ">
+              <div class="al2">
+
+                <div class="al3">
+                  <h1>Adição de Planta</h1>
+                </div>
+                
+
+                <form>
+                  <h3>Informações sobre a Planta</h3>
+                  <div class="col col-md-8">
+                    <div class="col col-md-7 ">
+                      <div class="form-group">    
+                        <label for="exampleInputEmail1">Nome Popular</label>
+                        <input  type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Coloque o nome popular da planta">
+                      </div>
+                    </div>
+
+                    <div class="col col-md-7">
+                      <div class="form-group">
+
+                        <label for="exampleInputEmail1">Nome Científico</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Coloque o nome Científico da planta">
+                      </div>
+                      <div class="form-group">
+
+                        <label for="nome"><h3>Local Cultivo</h3></label>
+
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">
+                            Vaso
+                          </label>
+                        </div>
+
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">
+                            Jardim
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">
+                            Campo
+                          </label>
+                            </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Horta
+                            </label>
+                          </div>
+
+                          <label for="nome"><h3>Cor Folha</h3></label>
+
+                          <input type="text" class="form-control" id="nome" value="Rosa/Amarela">
+                        </div>
+
+                          <div class="form-group">
+
+                            <label for="nome"><h3>Porte Planta</h3></label>
+
+
+                            <select class="form-control">
+                              <option>Nenhum</option>
+                              <option>até 1,5m</option>
+                              <option>entre 1,5m e 3m</option>
+                              <option>maior que 4,5m</option>
+                            </select>
+
+                          </div> 
+
+
+                        </div>
+
+
+                      </div>  
+                      
+                      <label><h3>Região Planta</h3></label>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Arida
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Semi-Árida
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Desértica
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Tropical
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Norte
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Nordeste
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Sul
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Sudeste
+                        </label>
+                      </div>
+
+                      <div class="botaoo">
+                        <button type="submit" class="btn btn-success">Cadastrar</button>
+                      </div>
+
+                    
+                </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+                <!-- footer -->
+                <footer class="footer">
+                  <div class="container">
+                    <center><span class="text-muted">
+                    © 2018 lays e francis.</span>
+                  </div></center>
+                </footer>
+
+
+
+
+                <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+                <!-- Include all compiled plugins (below), or include individual files as needed -->
+                <script src="bootstrap/js/bootstrap.min.js"></script>
+
+              </body>
+              </html>
