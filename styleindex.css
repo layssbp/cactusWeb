@@ -4,12 +4,12 @@ html {
 }
 body{
 
-	background-color: #d2edb6;
+	background-color: #ebf7df;
 	margin-bottom: 60px;
 }
 #nav{
 
-	background-color: #d2edb6;
+	background-color: #ebf7df;
 }
 button{
 
@@ -28,7 +28,7 @@ button:hover{
 	width: 100%;
 	height: 50px;
 	line-height: 60px; 
-	background-color: #deb6d2;
+	background-color: #ebf7df;
 }
 
 
@@ -86,4 +86,16 @@ button:hover{
     /* Create the parallax scrolling effect */
   background-attachment:fixed;
   background-repeat:repeat;
+}
+
+h3{
+	text-align: center;
+	    font-family: 'Poppins', sans-serif;
+
+}
+
+.center{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
