@@ -37,7 +37,7 @@
             <li> <a href="#">CATÁLOGO</a> </li>
             <li> <a href="#">SOBRE O CACTUS</a> </li>
             <li> <a href="#" data-toggle = "modal" data-target="#minha-janela">LOG IN</a> </li>
-
+<!--
             <li class="dropdown"> 
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">  MINHA CONTA <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -46,6 +46,7 @@
                 <li><a href="#">SAIR</a></li>
               </ul>
             </li>
+          -->
           </ul>
 
         </div>
@@ -57,12 +58,23 @@
     <div class="parallax">
     </div>
 
+<div class="image parallax2">
+          <img  src="imgs/pl.png">
+
+          <button id="botao" class="btn btn-success">Clique Aqui!</button>
+
+      </div>
+
+      <div class="parallax">
+    </div>
 
     <div class="container">
 
       <div class="al">
       <h3>Ultimas Plantas Catalogadas</h3>
     </div>
+
+
 
       <div class="row">
         <div class="col col-md-3">
@@ -95,12 +107,7 @@
       </div>
     </div>
 
-      <div class="image parallax2">
-          <img  src="imgs/pl.png">
-
-          <button id="botao" class="btn btn-success">Clique Aqui!</button>
-
-      </div>
+      
 
 
 
@@ -129,11 +136,41 @@
             <button type="button" class="btn btn-sky" data-dismiss="modal">Entrar</button>
             <br><br>  
             <p align="center"> não tem cadastro? <a href="telaCadastro.html">cadastre-se</a></p>
+            <button data-toggle = "modal" data-target="#exampleModal" class="botaoinvisivel">Esqueceu a senha?</button>
+
           </div>
 
         </div>
         </div>
         </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Esqueci a Senha</h5>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="alinhado">
+         
+          <form>
+            <div class="form-group">
+              <label for="assunto">Digite o seu Email </label>
+              <input type="email" class="form-control" id="assunto" placeholder="Digite o seu email">
+            </div>
+          </form
+        
+      </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal">ENVIAR</button> 
+              </div>
+    </div>
+  </div>
+</div>
+</div>
         <!-- fim do modal de login -->
 
 

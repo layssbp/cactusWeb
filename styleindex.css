@@ -99,3 +99,8 @@ h3{
     margin-left: auto;
     margin-right: auto;
 }
+
+.alinhado{
+  padding:1px;
+  text-align: center
+}

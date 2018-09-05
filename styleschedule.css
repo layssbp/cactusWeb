@@ -1,0 +1,16 @@
+
+.image{
+	position: relative;
+}
+
+
+.fundo{
+	 background-image: url("imgs/cactusbg.png");
+  background-repeat:repeat;
+  padding-bottom:500px;
+}
+
+
+
+.c2{
+}
