@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+     CACTUS
+    </title>
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styleindex.css">
+
+    <link rel="icon" href="imgs/p1.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="imgs/p1.png" type="image/x-icon" />
+
+  </head>
+  <body>
+    <div class="header">
+      <nav class="navbar navbar-default navbar-custom">
+      <div class= "container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand" href="#">CACTUS</a>
+        </div>
+        
+        <div id="barra-navegacao" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li> <a href="#">HOME</a> </li>
+            <li> <a href="#">CATÁLOGO</a> </li>
+            <li> <a href="#">SOBRE O CACTUS</a> </li>
+            <li> <a href="#" data-toggle = "modal" data-target="#minha-janela">LOG IN</a> </li>
+          </ul>
+
+        </div>
+      </nav>
+
+    </div>
+
+    <div class="container">
+
+    <h2><center>Cadastre-se<h2></center></h2>
+            
+ 
+            
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label for="firstName" class="col-sm-3 control-label">Nome</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="firstName" placeholder="First Name" class="form-control" autofocus>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="firstName" class="col-sm-3 control-label">Nome de Usuario</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="firstName" placeholder="Crie um nome de usuário" class="form-control" autofocus>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="col-sm-3 control-label">Email </label>
+                    <div class="col-sm-9">
+                        <input type="email" id="email" placeholder="Email" class="form-control" name= "email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="lastName" class="col-sm-3 control-label">Confirme o Email </label>
+                    <div class="col-sm-9">
+                        <input type="email" id="confEmail" placeholder="Confirme o Email" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="col-sm-3 control-label">Senha</label>
+                    <div class="col-sm-9">
+                        <input type="password" id="password" placeholder="Password" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="col-sm-3 control-label">Confirme a senha</label>
+                    <div class="col-sm-9">
+                        <input type="password" id="password" placeholder="Password" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="birthDate" class="col-sm-3 control-label">Data de Nascimento</label>
+                    <div class="col-sm-9">
+                        <input type="date" id="dataUser" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber" class="col-sm-3 control-label">Telefone </label>
+                    <div class="col-sm-9">
+                        <input type="phoneNumber" id="telUser" placeholder="Seu número de telefone" class="form-control">
+                       
+                    </div>
+                </div>
+            </form> <!-- /form -->
+    </div>
+    
+    <!-- modal de login -->
+    <div class="modal" id="minha-janela">
+        <div class="modal-dialog modal-sm" >
+        <div class="modal-content">
+        
+          <div class="modal-header">
+            <button  align="center" type="button" class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+            <h3 align="center">Login do Usuário  <span class="glyphicon glyphicon-user " aria-hidden="true"></span></h3>
+          </div>
+
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" class="form-control" id="email">
+              <label for="password">Senha</label>
+              <input type="password" class="form-control" id="password">
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-dismiss="modal">Entrar</button>
+            <br><br>
+            <p align="center"> não tem cadastro? <a href="cadUser.html">cadastre-se</a></p>
+          </div>
+
+        </div>
+        </div>
+        </div>
+        <!-- fim do modal de login -->
+
+
+
+        <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <center><span class="text-muted">
+        © 2018 lays e francis.</span>
+      </div></center>
+    </footer>
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    
+  </body>
+</html>
