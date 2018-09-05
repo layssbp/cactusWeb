@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+   CACTUS - ADMINISTRADOR
+ </title>
+
+ <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+ <link rel="stylesheet" type="text/css" href="bootstrap/css/pagadmin.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/controleusuario.css">
+
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+ <script type="text/javascript" src="assets/js/pagadmin.js"></script>
+
+ <link rel="icon" href="imgs/p1.png" type="image/x-icon" />
+ <link rel="shortcut icon" href="imgs/p1.png" type="image/x-icon" />
+ <link href="https://fonts.googleapis.com/css?family=Poppins:100" rel="stylesheet"> 
+</head>
+<body>
+
+  <div class="header">
+    <nav class="navbar navbar-default navbar-custom">
+      <div class= "container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand" href="#">CACTUS</a>
+        </div>
+
+        
+        <div id="barra-navegacao">
+
+
+        </div>
+      </nav>
+
+    </div>
+
+
+    <div class="row">
+      <div class="col" >
+        <div class="left-sidebar">
+          <!-- Sidebar scroll-->
+          <div class="scroll-sidebar">
+            <!-- Sidebar navigation-->
+            <nav class="sidebar-nav">
+              <ul id="sidebarnav">
+
+                <li class="nav-label">Home</li>
+                <li class="nav-devider"></li>
+                <li> <a href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Dashboard </span></a>
+
+                  <li class="nav-label">Usuários</li>
+                  <li class="nav-devider"></li>
+                  <li> <a href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Controle </span></a>
+                  </li>
+                  <li> <a href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Adição Admin</span></a>
+
+                    <li class="nav-devider"></li>
+                    <li class="nav-label">Plantas</li>
+                    <li> <a href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Controle </span></a>
+                    </li>
+                    <li> <a href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Adição </span></a>
+                    </li>
+
+                    <li class="nav-label">Site</li>
+                    <li class="nav-devider"></li>
+                    <li> <a href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Relatórios </span></a>
+                    </li>
+                    <li> <a href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Backup </span></a>
+                    </li>
+
+                  </nav>
+                  <!-- End Sidebar navigation -->
+                </div>
+                <!-- End Sidebar scroll-->
+              </div>
+            </div>
+
+
+
+
+          </div>
+
+
+
+
+
+
+          <div class="conteudo">
+            <div class="card card2">
+              <h1 id="al">Controle de Usuários</h1>
+              <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Email</th>
+      <th scope="col">Usuario</th>
+      <th scope="col">Tipo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><button data-toggle = "modal" data-target="#exampleModal" class="botaoinvisivel">1</button></th>
+      <td>Mark</td>
+      <td>Otto@gmail.com</td>
+      <td>@mdo</td>
+      <td>Usuário</td>
+    </tr>
+    <tr>
+      <th scope="row"><button data-toggle = "modal" data-target="#exampleModal" class="botaoinvisivel">2</button></th>
+      <td>Jacob</td>
+      <td>Jaboc@mail.com</td>
+      <td>@jacob</td>
+      <td>Usuário</td>
+    </tr>
+    <tr>
+      <th scope="row"><button data-toggle = "modal" data-target="#exampleModal4" class="botaoinvisivel">3</button></th>
+      <td>Larry</td>
+      <td>Larry@mail.com</td>
+      <td>@twitter</td>
+      <td>Administrador</td>
+    </tr>
+  </tbody>
+</table>     
+            </div>  
+
+          </div>
+
+
+         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">USUÁRIO COMUM</h5>
+      </div>
+      <div class="modal-body">
+              <div class="row">
+        <div class = "col-md-6 col-sm-6 col-xs-6 ">
+          <img class = "img-responsive center" src="imgs/user.png">
+          <p id="descricao">Astrogildo da Silva Potter</p>
+          <p id="descricao">Usuário Ativo desde 04/09/2018</p>
+      
+        </div>
+        <div class="row">
+          <div class="col">
+        <button type="button" data-toggle = "modal" data-target="#exampleModal2" class="btn btn-danger">Remover Usuário</button>  
+      </div>
+
+      <div class="col" id="bto">
+        <button type="button" class="btn btn-warning" data-toggle = "modal" data-target="#exampleModal3" >Enviar Aviso </button>
+      </div>
+
+      <div class="col" id="bto">
+        <button type="button" data-toggle = "modal" data-target="#exampleModal2" class="btn btn-dark">Resetar Senha</button>
+      </div>
+      </div>
+      </div>
+      
+      </div>
+
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">USUÁRIO ADMINISTRADOR</h5>
+      </div>
+      <div class="modal-body">
+              <div class="row">
+        <div class = "col-md-6 col-sm-6 col-xs-6 ">
+          <img class = "img-responsive center" src="imgs/user.png">
+          <p id="descricao">Dumbledore da Silva Potter</p>
+          <p id="descricao">Usuário Ativo desde 01/01/2018</p>
+      
+        </div>
+        <div class="row">
+          <div class="col">
+        <button type="button" data-toggle = "modal" data-target="#exampleModal2" class="btn btn-danger">Remover Usuário</button>  
+      </div>
+
+      <div class="col" id="bto">
+        <button type="button" class="btn btn-warning" data-toggle = "modal" data-target="#exampleModal3" >Enviar Aviso </button>
+      </div>
+
+      <div class="col" id="bto">
+        <button type="button" data-toggle = "modal" data-target="#exampleModal2" class="btn btn-dark">Resetar Senha</button>
+      </div>
+
+      <div class="col" id="bto">
+        <button type="button" data-toggle = "modal" data-target="#exampleModal5" class="btn btn-dark">Revogar Acesso</button>
+      </div>
+
+      </div>
+      </div>
+      
+      </div>
+
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">AVISO</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="alinhado">
+          <p>Você tem certeza?</p>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">SIM</button>  
+        <button type="button" class="btn btn-dark" data-dismiss="modal">NÃO</button>
+      </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Enviando Aviso</h5>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="alinhado">
+         
+          <form>
+            <div class="form-group">
+              <label for="assunto">Assunto </label>
+              <input type="text" class="form-control" id="assunto" placeholder="Insira o Assunto">
+            </div>
+            <div class="form-group">
+    <label for="exampleFormControlTextarea1">Mensagem</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+          </form
+        
+      </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal">ENVIAR</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">CANCELAR</button>  
+              </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Revogando Acesso do Administrador</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="custom-control custom-checkbox">
+          <div class="row">
+            <div class="col al2">
+              <input type="checkbox" class="custom-control-input" id="customCheck1">
+  <label class="custom-control-label" for="customCheck1">Controle de Usuários</label>
+            </div>
+
+            <div class="col al2">
+              <input type="checkbox" class="custom-control-input" id="customCheck2">
+  <label class="custom-control-label" for="customCheck2">Adição de Administradores</label>
+            </div>
+
+            <div class="col al2">
+               <input type="checkbox" class="custom-control-input" id="customCheck3">
+  <label class="custom-control-label" for="customCheck3">Controle de Plantas</label>
+            </div>
+
+            <div class="col al2">
+              <input type="checkbox" class="custom-control-input" id="customCheck4">
+  <label class="custom-control-label" for="customCheck4">Adição de Plantas</label>
+            </div>
+
+            <div class="col al2">
+               <input type="checkbox" class="custom-control-input" id="customCheck5">
+  <label class="custom-control-label" for="customCheck5">Relatórios</label>
+            </div>
+
+            <div class="col al2">
+               <input type="checkbox" class="custom-control-input" id="customCheck6">
+  <label class="custom-control-label" for="customCheck6">Backup</label>
+            </div>
+          </div>
+  
+  
+
+ 
+  
+
+ 
+ 
+
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+          <!-- footer -->
+          <footer class="footer">
+            <div class="container">
+              <center><span class="text-muted">
+              © 2018 lays e francis.</span>
+            </div></center>
+          </footer>
+
+
+
+
+          <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+          <!-- Include all compiled plugins (below), or include individual files as needed -->
+          <script src="bootstrap/js/bootstrap.min.js"></script>
+
+        </body>
+        </html>

@@ -1,0 +1,42 @@
+.botaoinvisivel{
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.center{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#descricao{
+	margin-top: 15px;
+	text-align: center;
+}
+
+#bto{
+	margin-top:20px;
+}
+
+.al2{
+	margin-left:100px;
+}
+
+.al3{
+    margin-left:200px;
+}
+
+.recuado{
+    margin-left:-150px;
+    margin-top: -50px;
+}
+
+.botaoo{
+    margin-top:300px;
+    margin-left:400px;
+}
